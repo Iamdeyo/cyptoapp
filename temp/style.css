@@ -14,8 +14,7 @@
 }
 body {
   scroll-behavior: smooth;
-  font-family: 'Eczar', serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-size: 1rem;
 }
 a,
@@ -23,10 +22,6 @@ li {
   list-style: none;
   text-decoration: none;
   color: var(--dark-bg);
-}
-img {
-  width: 100%;
-  height: 100%;
 }
 
 /* nav */
@@ -147,95 +142,6 @@ nav .ham {
 .bottom-bar ul li:hover a .icon {
   font-size: 2rem;
 }
-/* searchbar designs */
-.search-bar {
-  width: 100%;
-  margin: 10px 0;
-  border-top: #222 2px solid;
-  border-bottom: #222 2px solid;
-  position: relative;
-}
-.search-bar > div {
-  position: relative;
-}
-.search-bar div input {
-  outline: none;
-  width: 100%;
-  padding: 5px 5px;
-  font-family: inherit;
-  margin: 3px 0;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-.search-bar div input::placeholder {
-  font-style: italic;
-  font-size: 0.8em;
-}
-.search-bar div .search-modal {
-  position: absolute;
-  left: 50%;
-  top: 130%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 770px;
-  background-color: white;
-  box-shadow: 0px 1px 3px black;
-}
-.search-bar div .search-modal::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: -10px;
-  transform: translateX(-50%);
-  background-color: white;
-  width: 20px;
-  height: 20px;
-  transform: rotate(45deg);
-}
-.search-bar div .search-modal table {
-  width: 100%;
-  padding: 10px 5px;
-}
-.search-bar div .search-modal table .img-container {
-  width: 20px;
-  height: 20px;
-}
-.search-modal table td:first-child {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.search-modal table th {
-  text-align: left;
-}
-.search-modal table .text-r {
-  text-align: right;
-}
-.search-modal table thead .text-r a {
-  color: rgba(34, 34, 34, 0.452);
-  font-style: italic;
-  font-size: 0.9em;
-}
-.search-modal table a:hover {
-  text-decoration: underline;
-  color: rgba(34, 34, 34, 1) !important;
-}
-.search-modal .fa-circle-check {
-  color: green;
-}
-.search-modal .fa-circle-minus {
-  color: orange;
-}
-
-/* ---------------------------- */
-
-/* Crypocurrcy page */
-.crypto-list table .img-container {
-  width: 40px;
-  height: 40px;
-}
-
-/* ------------------ */
 
 /* --------------------------- */
 /* small tablets styles */
@@ -254,11 +160,5 @@ nav .ham {
   }
   .bottom-bar {
     display: none;
-  }
-  .search-bar .search-modal {
-    width: auto;
-    max-width: 500px;
-    background-color: white;
-    box-shadow: 0px 0px 3px black;
   }
 }
