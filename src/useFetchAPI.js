@@ -9,22 +9,12 @@ export const useFetchAPI = (query) => {
   useEffect(() => {
     const fetchData = async () => {
       // console.log('req made');
-      const options = {
-        headers: {
-          'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com',
-          'X-RapidAPI-Key':
-            '2cfa09d383mshc59053a300b33efp105948jsnf68854d2e784',
-        },
-      };
       try {
-        const res = await axios.get(
-          'https://coinranking1.p.rapidapi.com' + query,
-          options
-        );
+        const res = await axios.get('https://api.coingecko.com/api/v3' + query);
 
         if (res) {
-          console.log(res);
-          setData(res.data.data);
+          // console.log(res);
+          setData(res);
           setIsLoading(false);
           setIsFailed(null);
         }
