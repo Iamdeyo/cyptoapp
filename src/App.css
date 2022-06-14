@@ -286,7 +286,8 @@ select {
 .trending-top a:hover {
   text-decoration: underline;
 }
-.global .gd {
+span.sys {
+  text-transform: uppercase !important;
 }
 .trending-top {
   justify-content: space-between;
@@ -414,7 +415,7 @@ select {
 .crypto-detail .crypto-data .cd1 h3 span > div {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .crypto-list table tbody td .red,
 .crypto-detail .crypto-data .cd1 h3 span.red {
@@ -754,7 +755,7 @@ select {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 10px 0 20px 0;
 }
 /* ------------------ */

@@ -32,7 +32,7 @@ function Topcrypto() {
                   {' '}
                   <p> </p>
                   <Link to={`/crypto/${tr.id}`}>
-                    {tr.name} ({tr.symbol})
+                    {tr.name} <span className="sys"> ({tr.symbol})</span>
                   </Link>
                 </th>
                 <td>

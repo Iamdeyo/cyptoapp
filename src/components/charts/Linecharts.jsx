@@ -1,4 +1,5 @@
 import { Line } from 'react-chartjs-2';
+// eslint-disable-next-line
 import { Chart as ChartJS } from 'chart.js/auto';
 import { useEffect, useState } from 'react';
 import { useFetchAPI } from '../../useFetchAPI';
@@ -54,7 +55,7 @@ function Linecharts({ id }) {
         },
       ],
     });
-  }, [coinTimestamp, coinPrice]);
+  }, [coinTimestamp, coinPrice, currency]);
 
   const options = {
     plugins: {

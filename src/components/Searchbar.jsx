@@ -5,7 +5,6 @@ import { useFetchAPI } from '../useFetchAPI';
 function Searchbar() {
   const [searchResult, setSearchResult] = useState('');
   const [search, setSearch] = useState('');
-  const [searched, setSearched] = useState('');
   const [coinR, setCoinR] = useState([]);
   const [excR, setExcR] = useState([]);
 
